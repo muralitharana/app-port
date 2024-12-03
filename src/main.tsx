@@ -11,7 +11,7 @@ const theme = createTheme({
       main: "#000000", // Your primary color
     },
     secondary: {
-      main: "#ffffff", // Your secondary color
+      main: "#121212", // Your secondary color
     },
   },
 });
