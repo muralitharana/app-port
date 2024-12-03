@@ -12,13 +12,14 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
+import { baseRoute } from "../config/baseRoute";
 
 const pages = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Skills", path: "/skills" },
-  { name: "Work Experience", path: "/work-experience" },
-  { name: "Articles", path: "/articles" },
+  { name: "Home", path: baseRoute + "/" },
+  { name: "About", path: baseRoute + "/about" },
+  { name: "Skills", path: baseRoute + "/skills" },
+  { name: "Work Experience", path: baseRoute + "/work-experience" },
+  { name: "Articles", path: baseRoute + "/articles" },
 ];
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -48,7 +49,7 @@ function Header() {
   };
 
   return (
-    <AppBar position="static" style={{  }}>
+    <AppBar position="static" style={{}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -132,7 +133,7 @@ function Header() {
                   color: "white",
                   display: "block",
                   textDecoration: "none",
-                  marginRight:10
+                  marginRight: 10,
                 }}
               >
                 {page.name}
